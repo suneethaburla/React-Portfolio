@@ -1,0 +1,33 @@
+body {
+    background-image: url("../images/criss-cross.png");
+    font-size: 18px;
+}
+.page-header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+h1 {
+    color: #17a2b8;
+}
+.navbar {
+    box-shadow: 1px 2px 2px gray;
+}
+.container {
+    background-color: white;
+    margin-top: 20px;
+}
+.container-portfolio {
+    margin-bottom: 100px;
+}
+.nav-link {
+    color: #474747;
+}
+a:hover {
+    text-decoration: none;
+}
+.profile-pic {
+    margin-top: 10px;
+}
+footer {
+    border-top: 8px solid #17a2b8;
+}

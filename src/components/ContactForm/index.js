@@ -2,7 +2,7 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 
-function Contact() {
+const ContactForm = (props) => {
 
     return (
         <div className="container">
@@ -16,21 +16,21 @@ function Contact() {
                 </div>
             </div>
 
-            <form>
+            <form onSubmit = {props.submit} method = "POST">
                 <div className="form-group">
-                    <label for="exampleFormControlInput1">Name</label>
-                    <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Suneetha Burla" />
+                    <label htmlFor="name">Name</label>
+                    <input type="text" className="form-control" id="exampleFormControlInput1" placeholder="Full Name" name="name" onChange={props.handleNameChange}/>
                 </div>
 
                 <div className="form-group">
-                    <label for="exampleFormControlInput1">Email</label>
-                    <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
+                    <label htmlFor="exampleInputEmail">Email</label>
+                    <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email" onChange={props.handleEmailChange} />
                 </div>
 
                 <div className="form-group">
-                    <label for="exampleFormControlTextarea1">Message</label>
+                    <label htmlFor="name">Message</label>
                     <textarea className="form-control" id="exampleFormControlTextarea1" placeholder="Type your message here.."
-                        rows="3"></textarea>
+                        name ="message" onChange={props.handleEmailChange} rows="5"></textarea>
                 </div>
 
                 <div className="form-group">
@@ -42,4 +42,4 @@ function Contact() {
 
 }
 
-export default Contact;
+export default ContactForm;
